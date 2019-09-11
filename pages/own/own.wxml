@@ -1,0 +1,52 @@
+<header background-color="#FFE4C4" color="#fff" catchtap='go'>活 动 详 情</header>
+<block wx:for="{{feed1}}" wx:for-index="idx" wx:key="{{1}}" data-idx="{{idx}}">
+  <view class="unread">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <!-- <button class=" show">分享</button> -->
+    <text class='wordtext'>时间：{{item.create_time}}</text>
+    <view class='intersting_img'>
+      <image src='{{item.picture}}'></image>
+      <view class='intersting_word'>
+        <textarea>主题：{{item.active_name}} </textarea>
+       
+        <textarea>主要内容： {{item.main_info}}</textarea>
+        
+        <textarea>地点：{{item.active_place_main}}</textarea>
+        <!-- <text class='number'>参加人数：20人</text> -->
+      </view>
+    </view>
+    <view class='btn'>
+      <button class="show-btn" bindtap="showDialogBtn">退出活动</button>
+      <button class=" show" bindtap="showDialogBtn_show" >分享</button>
+    </view>
+
+  </view>
+
+
+</block>
+<!-- <view class='team unread'>
+  活动成员
+</view> -->
+<view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove2" wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+  <view class="modal-title"><text selectable='true' >{{showModal2_value}}</text> </view>
+
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel_show" data-status="cancel">关闭</view>
+    <view class="btn-confirm" bindtap="onConfirm_show" data-status="confirm">{{showModal2_true}}</view>
+  </view>
+</view>
+
+
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">确定退出</view>
+
+  <view class="modal-footer">
+  <!-- wx.getStorageSync('openId') -->
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+   "pages/own/own",
+    "pages/add/add",
+    
+"pages/index/index",
+  
+    "pages/first/first",
+    "pages/personal_infor/personal_infor",
+   "pages/join/join",
+    
+    "pages/try/try",
+    "pages/welcome1/welcome1",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#F5C6C3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "首页",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "发布",
+        "iconPath": "images/添加1.png",
+        "selectedIconPath": "images/添加.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png",
+        "text": "个人"
+      }
+    ],
+    "color": "#000000"
+  },
+  "usingComponents": {
+    "header": "../component/header"
+  }
+}

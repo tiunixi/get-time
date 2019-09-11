@@ -1,0 +1,120 @@
+page{
+text-align:center
+}
+/*活动信息*/
+.unread{
+ margin-top:41rpx;
+border:#FFE4C4 dashed 1px;
+width:90%;
+margin-left:36rpx;
+
+}
+.intersting_img{
+  margin-top:39rpx;
+}
+.intersting_img textarea{
+  width:85%;
+margin-left:56rpx;
+text-align: left;
+height: auto;
+/* font-size: 30rpx */
+}
+.wordtext
+{
+  margin-left:49rpx;
+color:#aaa;
+font-size:30rpx;
+
+}
+.number{
+color:#aaa;
+font-size: 30rpx;
+}
+.show{
+width:129rpx;
+margin-top:30rpx;
+color:#22cc22;
+margin-bottom:27rpx;
+font-size:27rpx;
+
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+  margin-left:-8rpx;
+
+}
+.userinfo-nickname {
+  /* margin-top: 200px; */
+  position: relative;
+  display: inline-block
+}
+
+/*活动成员*/
+.team{
+  height: 100rpx;
+  margin-bottom: 41rpx;
+}
+/*弹框*/
+.btn button
+{
+font-size:29rpx;
+width:215rpx;
+}
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+  margin-bottom:27rpx;
+
+}
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{1}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="505rpx" height="150" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<form bindsubmit="formSubmit" bindreset="formReset" >
+  
+  <view class='add_main'>
+    <input placeholder="活动主题:" class="num"placeholder-class="phcolor" name="active_name" value='{{form_info}}' />
+    <view class="section">
+
+      <picker mode="date" value="{{date}}" start="2018-06-05" end="2222-02-22" bindchange="bindDateChange" name="date_time"value='{{form_info}}'>
+        <view class="picker num" >
+          日期: {{date}}
+        </view>
+      </picker>
+     <view class="section">
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange" name="main_time"value='{{form_info}}'>
+    <view class="picker num">
+      具体时间: {{time}}
+    </view>
+  </picker>
+</view>
+    </view>
+    <input placeholder="集合地点:"placeholder-class="phcolor"  class="search-inp num" name="active_place_main" value='{{form_info}}' />
+
+    <view class="big_logos">
+    
+      <image bindtap="upimg" src='/images/add.svg' style='margin-left:0rpx; '></image>
+      <block wx:for="{{img_arr}}" wx:key="{{1}}">
+        <view class='logoinfo' wx:if="{{!form_pic}}">
+        <!-- <button bindtap="deleteImage" class='deleteImage'>删除</button> -->
+        	<view class="delete" bindtap="deleteImage">
+          <image class='ee' src="/images/icon_delete.png" />
+          </view>
+          <image src='{{item}}'style="width:640rpx;" class="getpic"bindtap="previewImage"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+   <textarea placeholder="主要内容，选填"placeholder-class="phcolortext"  class='word_textarea' name='main_info' value='{{form_info}}'></textarea>
+  <button type='' class="add_btn" form-type='submit'catchtap="onLoad">发送</button>
+</form>

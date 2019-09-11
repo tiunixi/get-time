@@ -1,0 +1,85 @@
+<view class="fist_leader">
+  <text>get time</text>
+</view>
+
+<view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:key="{{1}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab" scroll-top='10' scroll-x="true" bindchange='changeIndex'>
+    {{itemName}}
+  </view>
+</view>
+<scroll-view scroll-y="true" scroll-top='10' scroll-x="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" bindchange='changeIndex' style="height:auto">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="unread"></view>
+
+    <view class='first_main'>
+      <view class="num">
+        <!-- 默认f 当bindtap的时候传值取反 -->
+        <button id='tv' class="hide{{showView?'show':''}}" bindtap="onChangeShowState">收起</button>
+        <button id='tv' class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">活动口令</button>
+        <view class="hide{{!showView?'show':''}}">
+          <input placeholder="输入口令" class="first-inp"value="{{mun1}}" name="heart" bindinput='gg' />
+          <button id='heart' bindtap="onheart"></button>
+        </view>
+      </view>
+      <view class='cant_login' wx:if="{{num2}}">
+        <text>在个人中心 可再次登录，查看此内容,若以登陆请重进</text>
+      </view>
+
+      <block wx:for="{{feed}}"wx:if="{{!num2}}" wx:for-index="idx" wx:key="{{1}}" >
+        <!-- <navigator url="../own/own?id={{item.id}}" > -->
+          <view class='get' wx:if="{{decline}}" catchtap='go' data-idx="{{item.id}}">
+            <view class="picuse">
+
+              <view class="userinfo">
+                <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登陆 </button>
+
+                <block wx:else>
+                  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+                </block>
+              </view>
+               <view class="date_time">
+                <text>{{item.create_time}}</text>
+              </view> 
+              <view class="time_date">
+              
+                <text>{{item.active_name}}</text>
+              </view>
+              <view class="map">
+                <text>活动地点：{{item.active_place_main}}</text>
+              </view>
+
+            </view>
+
+          </view>
+        <!-- </navigator> -->
+        <view class='mua2'></view>
+      </block>
+
+      <view class='mua3' wx:if="{{!num2}}"></view>
+    </view>
+  </view>
+
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+    <view class="unread"> </view>
+
+    <block wx:for="{{feed1}}" wx:for-index="idx1" wx:key="{{1}}" data-idx="{{idx1}}">
+      <!-- <navigator url="{{to}}">
+       url='{{to}}' ../look/look?title=look  -->
+        <view class='intersting_img'>
+          <image src='{{item.pic}}'></image>
+          <view class='intersting_word'>
+            <textarea>{{item.time1 }} {{item.title}}
+            </textarea>
+            <text class='wordtext'>{{time}}</text>
+          </view>
+        </view>
+      <!-- </navigator> -->
+      <view class='mua1'></view>
+    </block>
+
+  </view>
+
+</scroll-view>
+

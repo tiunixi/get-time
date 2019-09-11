@@ -1,0 +1,124 @@
+page{
+  /* background: #F5F5DC */
+}
+
+view{
+  position:relactive;
+text-align:center;
+}
+.ee{
+  left: 20rpx;
+  position: relative
+}
+/*删除按钮*/
+.delete {
+position:absolute;
+height:41px;
+width:85%;
+background:#ccc;
+opacity:.8;
+left:57rpx;
+
+}
+
+.delete image {
+position:absolute;
+width:51px;
+height:45px;
+left:122px;
+
+}
+.slide-image {
+  width: 750rpx;
+  no-repeat: 0 -20px;
+}
+.big_logos{
+  margin-left:-2rpx;
+background: white;
+width: 100%;
+border:1rpx solid #FFE4C4;
+}
+.picker {
+  background-color: #fff;
+}
+.time{
+  margin-left:427rpx;
+margin-top:-85rpx;
+
+}
+.search-inp{
+  padding-bottom: 20rpx
+}
+.phcolor{  
+    color: #000000;
+    /* margin-left: 30rpx   */
+}
+/* .add_main {
+  width: 80%;
+  align-items: center;
+  left: 38rpx;
+  position: relative;
+  height: auto;
+  margin: 20px;
+} */
+
+.add_main  {
+ border:1rpx solid #FFE4C4;
+border-radius:25rpx;
+margin-top:41rpx;
+margin-left:22px;
+width:661rpx;
+/* height:85vh; */
+color:#000000;
+}
+
+.add_pic {
+  height: auto;
+}
+
+
+.logoinfo image{
+  /* margin-left:18rpx; */
+}
+
+
+button {
+width:90%;
+margin-top:27rpx;
+margin-left:34rpx;
+position:absolute;
+background:#ffe4c4;
+border-radius:25rpx;
+
+}
+.phcolortext{
+  border: 1rpx solid #FFE4C4;
+}
+.word_textarea {
+display:block;
+margin-top:68rpx;
+border:1rpx solid #FFE4C4;
+height:97rpx;
+width:557rpx;
+padding-left:107rpx;
+background:white;
+margin-left:41rpx;
+border-radius:25rpx;
+padding-top:35rpx;
+
+}
+
+.num{
+border-bottom:1rpx solid #FFE4C4;
+height:88rpx;
+padding-top:23rpx;
+padding-left:30rpx;
+ background: white
+
+}
+
+/* .time {
+  position: absolute;
+  left: 353rpx;
+  top: 65rpx;
+} */

@@ -1,0 +1,31 @@
+<header background-color="#FFE4C4" color="#fff"catchtap='go' >天气预报早知道</header>
+
+<view class="user_all">
+<text class="userinfo-nickname" class="wx_user">微信名:{{userInfo.nickName}}</text>
+  <!-- <view class='user one'>
+    <text>姓名</text>
+     
+    <input placeholder="tiunxin，后台传值" class="search-inp" />
+  </view>
+
+  <view class="user two">
+    <text>手机</text>
+    <input placeholder="添加手机号" class="search-inp" />
+  </view>
+
+  <view class="user three">
+    <text>年龄</text>
+    <input placeholder="年龄" class="search-inp" />
+  </view>
+  <view class="user four">
+    <text>主要活动地</text>
+    <input placeholder="地点" class="search-inp"class="fourtext" />
+  </view>
+    -->
+</view>
+
+
+<view class="weather">
+  <text>{{weatherData}}</text>
+</view>
+<button id='heart'></button>

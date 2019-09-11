@@ -1,0 +1,27 @@
+<view class="container">
+
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/images/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <image class="title" src="/images/title8.png"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image bindtap="bindViewTap" class="userinfo-avatar logo" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <image class="wave" src="/images/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/images/wave.png" mode="aspectFill"></image>
+         <text class="userinfo-nickname">{{userInfo.nickName}}</text> 
+        <button wx:if="{{hasUserInfo && canIUse}}" class='zz' open-type="getUserInfo" catchtap='go' bindgetuserinfo="getUserInfo"> 欢迎回来 </button>
+        <view class="userinfo confirm-btn">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" catchtap='go' bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+
+
+
+        </view>
+        <image class="smalltitle" src="/images/confirm-word1.png"></image>
+        <text class="copyright">欢迎浏览作品定个时间</text>
+      </view>
+
+    </view>
+  </block>
+</view>

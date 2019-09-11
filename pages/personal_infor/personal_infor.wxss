@@ -1,0 +1,96 @@
+
+.wx_user{
+  align-items: center;
+  color: #AAAAAB;
+ justify-content: space-around; 
+display: flex;
+
+}
+.user_all input{
+  width: 70%;
+  height: 20rpx;
+  border: bisque solid  1rpx; 
+  
+  display:inline-flex;
+}
+.user_all text{
+  margin-right: 20rpx;
+  margin-top:185rpx;
+font-size: 68rpx
+}
+.user{
+  /* margin-top: 20rpx;
+  margin-left: 20rpx; */
+  margin-top:27rpx;
+margin-left:91rpx;
+
+}
+#heart {
+    /* position: relative;
+    width: 100rpx;
+    height: 90rpx;
+    background: white;
+  
+    right:-311rpx;
+    top:-103rpx; */
+    position:relative;
+width:100rpx;
+height:90rpx;
+background:white;
+right:10rpx;
+top:78rpx;
+
+
+} 
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50rpx;
+    top: 0;
+    width: 50rpx;
+    height: 80rpx;
+    background: red;
+    -moz-border-radius: 50rpx 50rpx 0 0;
+    border-radius: 50rpx 50rpx 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+.four{
+  width: 100%;
+}
+.four input{
+  width: 353rpx;
+}
+/*天气*/
+.weather{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 150px;
+    color: #aaa;
+    font-weight: 600;
+    height: 100%;
+  margin-top: -157rpx    
+}
