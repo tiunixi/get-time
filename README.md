@@ -2,12 +2,12 @@
 
 以下是截图
 
-![Image 1](E:\微信小程序\get time\README_PIC\Image 1.png)
+![Image 1](E:\微信小程序\get time\get time\README_PIC\Image 1.png)
 
-![Image 2](E:\微信小程序\get time\README_PIC\Image 2.png)
+![Image 2](E:\微信小程序\get time\get time\README_PIC\Image 2.png)
 
-![Image 4](E:\微信小程序\get time\README_PIC\Image 4.png)
+![Image 4](E:\微信小程序\get time\get time\README_PIC\Image 4.png)
 
-![Image 6](E:\微信小程序\get time\README_PIC\Image 6.png)
+![Image 6](E:\微信小程序\get time\get time\README_PIC\Image 6.png)
 
-![Image 7](E:\微信小程序\get time\README_PIC\Image 7.png)
+![Image 7](E:\微信小程序\get time\get time\README_PIC\Image 7.png)
